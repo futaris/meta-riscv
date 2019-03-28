@@ -6,6 +6,7 @@ require conf/machine/include/tune-riscv.inc
 MACHINE_FEATURES = "screen keyboard ext2 ext3 serial"
 
 KERNEL_IMAGETYPE = "vmlinux"
+KERNEL_ALT_IMAGETYPE = "Image"
 
 GDBVERSION = "riscv"
 
