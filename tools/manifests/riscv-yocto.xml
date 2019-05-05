@@ -7,9 +7,9 @@
   <default remote="openembedded" revision="master" />
 
   <project name="meta-riscv" remote="futaris" path="meta-riscv" revision="rv32ima" />
-  <project name="openembedded-core" remote="openembedded" path="openembedded-core" revision="master" />
+  <project name="openembedded-core" remote="futaris" path="openembedded-core" revision="rv32ima" />
   <project name="bitbake" remote="openembedded" path="openembedded-core/bitbake" revision="master" />
-  <project name="meta-openembedded" remote="futaris" path="meta-openembedded" revision="rv32ima" />
+  <project name="meta-openembedded" remote="openembedded" path="meta-openembedded" revision="master" />
 
 </manifest>
 
