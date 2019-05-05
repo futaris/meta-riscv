@@ -12,7 +12,7 @@ GDBVERSION = "riscv"
 
 SERIAL_CONSOLES ?= "115200;ttyS0 115200;hvc0"
 
-IMAGE_FSTYPES_append = " ext4"
+IMAGE_FSTYPES_append = " ext4 cpio cpio.gz"
 
 MACHINE_EXTRA_RRECOMMENDS += " kernel-modules"
 
