@@ -5,13 +5,14 @@ require conf/machine/include/tune-riscv.inc
 
 MACHINE_FEATURES = "screen keyboard ext2 ext3 serial"
 
-KERNEL_IMAGETYPE = "Image"
+KERNEL_IMAGETYPE = "vmlinux"
+KERNEL_ALT_IMAGETYPE = "Image"
 
 GDBVERSION = "riscv"
 
 SERIAL_CONSOLES ?= "115200;ttyS0 115200;hvc0"
 
-IMAGE_FSTYPES_append = " ext4"
+IMAGE_FSTYPES_append = " ext4 cpio cpio.gz"
 
 MACHINE_EXTRA_RRECOMMENDS += " kernel-modules"
 
