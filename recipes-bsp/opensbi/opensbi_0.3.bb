@@ -19,7 +19,7 @@ S = "${WORKDIR}/git"
 SRC_URI[md5sum] = "621f38d8205ef5fb185e4055025e73df"
 SRC_URI[sha256sum] = "07f18b73abf3b85aabe5bead19a923716c100d30eb58033459f39c3a224be300"
 
-TUNE_CCARGS_riscv32 .= "-march=rv32gc -mabi=ilp32d"
+TUNE_CCARGS_riscv32 .= "-march=rv32gc -mabi=ilp32"
 
 EXTRA_OEMAKE += "PLATFORM=${RISCV_SBI_PLAT} I=${D}"
 # If RISCV_SBI_PAYLOAD is set then include it as a payload
